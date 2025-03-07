@@ -47,7 +47,7 @@ async def leaked(interaction: discord.Interaction, email: str = None, name: str 
 
 @bot.tree.command(description="Adatvédelmi Tájékoztató")
 async def privacy(interaction: discord.Interaction):
-    await interaction.response.send_message("Az adatok, amiket parancsokként beírsz, a bot fejlesztői nem látják.\nA kiszivárgott adatok publikusan nincsenek megosztva a fejlesztők legjobb tudomása szerint, viszont ha az megtörténik, azért nem vállalunk felelősséget. A fájl, ahonnan beolvassuk és megnézzük, hogy a szivárgás tartalmazza-e a te adataidat, csak a több biztonsági réteggel is védett szerverünkön található meg.\nAz adataiddal a fejlesztők nem élnek vissza, és arról nem kapunk értesítést, ha mégis benne vannak az adataid.\n\nForráskód: https://github.com/QwIT-Development/pwned-bot")
+    await interaction.response.send_message("Az adatok, amiket parancsokként beírsz, a bot fejlesztői nem látják.\nA kiszivárgott adatok publikusan nincsenek megosztva a fejlesztők legjobb tudomása szerint, viszont ha az megtörténik, azért nem vállalunk felelősséget. A fájl, ahonnan beolvassuk és megnézzük, hogy a szivárgás tartalmazza-e a te adataidat, csak a több biztonsági réteggel is védett szerverünkön található meg.\nAz adataiddal a fejlesztők nem élnek vissza, és arról nem kapunk értesítést, ha mégis benne vannak az adataid.\n\nForráskód: https://github.com/rnxm/pwned-bot")
 
 asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 bot.run(os.getenv("TOKEN"))
